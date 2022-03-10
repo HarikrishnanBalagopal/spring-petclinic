@@ -21,3 +21,7 @@ services:
       - POSTGRES_PASSWORD=petclinic
       - POSTGRES_USER=petclinic
       - POSTGRES_DB=petclinic
+  frontend:
+    image: docker.io/library/spring-petclinic:2.6.0-SNAPSHOT
+    ports:
+      - "8080:8080"
